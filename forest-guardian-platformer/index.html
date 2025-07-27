@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forest Guardian Platformer</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="game-container">
+        <div id="game-canvas"></div>
+        <div id="loading-screen">
+            <div class="loading-content">
+                <h1>Forest Guardian</h1>
+                <div class="loading-bar">
+                    <div class="loading-progress"></div>
+                </div>
+                <p>Loading mystical forest...</p>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Game Info Panel -->
+    <div id="game-info">
+        <h2>Forest Guardian Platformer</h2>
+        <p>Use WASD or Arrow Keys to move</p>
+        <p>SPACE to jump (hold for higher jumps)</p>
+        <p>SHIFT to dash (when unlocked)</p>
+        <p>Collect gems to unlock new abilities!</p>
+    </div>
+
+    <!-- Phaser.js CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/phaser@3.70.0/dist/phaser.min.js"></script>
+    
+    <!-- Game Scripts -->
+    <script src="js/utils/Constants.js"></script>
+    <script src="js/utils/Helpers.js"></script>
+    <script src="js/systems/InputManager.js"></script>
+    <script src="js/systems/AudioManager.js"></script>
+    <script src="js/systems/SaveSystem.js"></script>
+    <script src="js/systems/AbilitySystem.js"></script>
+    <script src="js/entities/Player.js"></script>
+    <script src="js/entities/Enemy.js"></script>
+    <script src="js/entities/Boss.js"></script>
+    <script src="js/scenes/PreloadScene.js"></script>
+    <script src="js/scenes/MenuScene.js"></script>
+    <script src="js/scenes/GameScene.js"></script>
+    <script src="js/scenes/UIScene.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
